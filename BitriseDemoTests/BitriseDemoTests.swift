@@ -10,7 +10,8 @@ import XCTest
 @testable import BitriseDemo
 
 class BitriseDemoTests: XCTestCase {
-
+    let a = 10, b = 5
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -29,6 +30,22 @@ class BitriseDemoTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testAdd(){
+        XCTAssertEqual(a + b, 15)
+    }
+    
+    func testSubtract(){
+        XCTAssertEqual(a - b, 5)
+    }
+    
+    func testMultiply(){
+        XCTAssertEqual(a * b, 50)
+    }
+    
+    func testDivide(){
+        XCTAssertEqual(a / b, 2)
     }
 
 }
