@@ -58,6 +58,6 @@ class BitriseDemoTests: XCTestCase {
     
     func stringTest() {
         let x = "hello bitrise"
-        XCTAssertEqual(x, "hello bitrise")
+        XCTAssertEqual(x, "hello bitris")
     }
 }
