@@ -41,7 +41,7 @@ class BitriseDemoTests: XCTestCase {
     }
     
     func testRandom() {
-        XCTAssertEqual((a + b), 10)
+        XCTAssertEqual(a + b, 15)
     }
 
 }
