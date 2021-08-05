@@ -14,6 +14,10 @@
 		2566CED624EA355F002C4051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2566CED524EA355F002C4051 /* Assets.xcassets */; };
 		2566CED924EA355F002C4051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2566CED724EA355F002C4051 /* LaunchScreen.storyboard */; };
 		2566CEE424EA3560002C4051 /* BitriseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2566CEE324EA3560002C4051 /* BitriseDemoTests.swift */; };
+		DC52A58B26BBBAEF00A7C4A3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52A58A26BBBAEF00A7C4A3 /* User.swift */; };
+		DC52A58E26BBBB8800A7C4A3 /* StubHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52A58D26BBBB8800A7C4A3 /* StubHelper.swift */; };
+		DC52A59026BBBC7400A7C4A3 /* UserStub.json in Resources */ = {isa = PBXBuildFile; fileRef = DC52A58F26BBBC7400A7C4A3 /* UserStub.json */; };
+		DC52A59226BBBD9300A7C4A3 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52A59126BBBD9300A7C4A3 /* UserSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		2566CEDF24EA3560002C4051 /* BitriseDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitriseDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2566CEE324EA3560002C4051 /* BitriseDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitriseDemoTests.swift; sourceTree = "<group>"; };
 		2566CEE524EA3560002C4051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC52A58A26BBBAEF00A7C4A3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC52A58D26BBBB8800A7C4A3 /* StubHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubHelper.swift; sourceTree = "<group>"; };
+		DC52A58F26BBBC7400A7C4A3 /* UserStub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserStub.json; sourceTree = "<group>"; };
+		DC52A59126BBBD9300A7C4A3 /* UserSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		2566CECB24EA3559002C4051 /* BitriseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DC52A58926BBBADE00A7C4A3 /* Model */,
 				2566CECC24EA3559002C4051 /* AppDelegate.swift */,
 				2566CECE24EA3559002C4051 /* SceneDelegate.swift */,
 				2566CED024EA3559002C4051 /* ViewController.swift */,
@@ -93,10 +102,29 @@
 		2566CEE224EA3560002C4051 /* BitriseDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				DC52A58C26BBBB7200A7C4A3 /* Stub */,
 				2566CEE324EA3560002C4051 /* BitriseDemoTests.swift */,
 				2566CEE524EA3560002C4051 /* Info.plist */,
+				DC52A58D26BBBB8800A7C4A3 /* StubHelper.swift */,
+				DC52A59126BBBD9300A7C4A3 /* UserSpec.swift */,
 			);
 			path = BitriseDemoTests;
+			sourceTree = "<group>";
+		};
+		DC52A58926BBBADE00A7C4A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC52A58A26BBBAEF00A7C4A3 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC52A58C26BBBB7200A7C4A3 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				DC52A58F26BBBC7400A7C4A3 /* UserStub.json */,
+			);
+			path = Stub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC52A59026BBBC7400A7C4A3 /* UserStub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC52A58B26BBBAEF00A7C4A3 /* User.swift in Sources */,
 				2566CED124EA3559002C4051 /* ViewController.swift in Sources */,
 				2566CECD24EA3559002C4051 /* AppDelegate.swift in Sources */,
 				2566CECF24EA3559002C4051 /* SceneDelegate.swift in Sources */,
@@ -211,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2566CEE424EA3560002C4051 /* BitriseDemoTests.swift in Sources */,
+				DC52A58E26BBBB8800A7C4A3 /* StubHelper.swift in Sources */,
+				DC52A59226BBBD9300A7C4A3 /* UserSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
