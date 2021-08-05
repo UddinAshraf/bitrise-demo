@@ -8,6 +8,7 @@
 
 import XCTest
 @testable import BitriseDemo
+
 class UserSpec: XCTestCase {
     let sut: User = StubHelper.fromJSON(StubType.user.rawValue)!
     override func setUpWithError() throws {
@@ -20,5 +21,10 @@ class UserSpec: XCTestCase {
     
     func testUserId() {
         XCTAssertNotNil(sut.id)
+    }
+    
+    func testFullname() {
+        let fullname = "\(sut.firstName) \(sut.lastName)"
+        XCTAssertEqual(sut.fullName, fullname)
     }
 }
