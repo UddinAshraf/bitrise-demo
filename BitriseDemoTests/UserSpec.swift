@@ -24,7 +24,11 @@ class UserSpec: XCTestCase {
     }
     
     func testFullname() {
-        let fullname = "\(sut.firstName)\(sut.lastName)"
+        let fullname = "\(sut.firstName) \(sut.lastName)"
         XCTAssertEqual(sut.fullName, fullname)
+    }
+    
+    func testFeatured() {
+        XCTAssertEqual(sut.featured, true)
     }
 }
